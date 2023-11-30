@@ -38,6 +38,45 @@ O uso da extensão é bem simples, assim que a instalação for concluida, basta
 - Nos campos de endereço do solicitante da CENPROT, as tags de número e complemento estão invertidos, então nos pedidos que o solicitante preencher o campo complemento, o complemento virá antes do número, infelizmente não consegui treinar o scrapper para identificar e separar essas informações, mas caso os desenvolvedores da CENPROT corrijam isso posteriormente, eu consigo ajustar o código para também realziar essa correção.
 - O site da cenprot não separa os campos do pedido com IDs únicas, então a extração dos dados se dá através de comparações com expressões comuns de cada campo. Caso haja alteração de descrições o script pode não funcionar corretamente, se isso ocorrer basta abrir uma "issue"aqui no github para que eu verifique e corrija.
 
+## Estrutura Padrão
+A estrutura padrão do XML tem o seguinte formato:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+    <solicitante>
+      <nome_solicitante></nome_solicitante>
+      <documento></documento>
+      <estado_civil></estado_civil>
+      <profissao></profissao>
+      <email></email>
+      <telefone></telefone>
+      <celular></celular>
+      <endereco></endereco>
+    </solicitante>
+  <pedido>
+    <numero></numero>
+    <data></data>
+    <status></status>
+    <chave_verificacao></chave_verificacao>
+  </pedido>
+    <certidao>
+      <nome_pesquisado></nome_pesquisado>
+      <documento_pesquisado></documento_pesquisado>
+      <rg_pesquisado></rg_pesquisado>
+      <cep_pesquisado></cep_pesquisado>
+      <endereco_pesquisado></endereco_pesquisado>
+      <bairro_pesquisado></bairro_pesquisado>
+      <cidade_pesquisado></cidade_pesquisado>
+      <uf_pesquisado></uf_pesquisado>
+      <email_pesquisado></email_pesquisado>
+      <periodo_pesquisado></periodo_pesquisado>
+      <motivo_solicitacao></motivo_solicitacao>
+    </certidao>
+</pedidos>
+```
+Esse formato foi pensando já com a possibilidade de receber mais de um pedido no mesmo arquivo XML, e deve ser considerado na hora de realizar a integração com o sistema de automação.
+
 ## License
 MIT
 **Free Software, Hell Yeah!**
