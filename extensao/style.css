@@ -1,34 +1,63 @@
-/* Reset de margens e preenchimentos */
-body, h1, p, button {
-    margin: 0;
-    padding: 0;
-}
-
-/* Estilo do corpo da extensão */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Adicionado para empilhar os elementos verticalmente */
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    background-color: #031f31; /* Azul como o botão */
 }
 
-/* Estilo do título */
-h1 {
-    color: #4285f4; /* Azul do Google Chrome */
+.extension-container {
     text-align: center;
+    color: #fff; /* Cor do texto */
 }
 
-/* Estilo do botão */
-button {
-    background-color: #4285f4;
-    color: #fff;
-    padding: 10px;
-    border: none;
+h1, p {
+    margin: 0;
+}
+
+.download-button {
+    display: inline-block;
+    width: 50px; /* Tamanho do botão */
+    height: 50px; /* Tamanho do botão */
+    background-color: #fff; /* Fundo branco do botão */
+    border-radius: 50%;
+    position: relative;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    border-radius: 10px;
+    border: none;
+    overflow: hidden;
+    margin-top: 10px; /* Espaço entre o parágrafo e o botão */
 }
 
-button:hover {
-    background-color: #3367d6;
+.icon {
+    font-size: 36px; /* Tamanho do ícone */
+    line-height: 50px;
+    color: #3498db; /* Tom de azul parecido com o fundo */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.link-container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre os links */
+    width: 100%; /* Garante que os links ocupem a largura disponível */
+    margin-top: 10px; /* Espaço entre o botão e os links */
+}
+
+.github-link,
+.usage-link {
+    font-size: 14px; /* Tamanho do texto */
+    color: #fff;
+    text-decoration: none;
+}
+
+.github-link:hover,
+.usage-link:hover {
+    text-decoration: underline;
 }
