@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
     <title>Cenprot Scrapper</title>
 </head>
 <body>
-    <h1>Cenprot Scrapper</h1>
-    <button id="run-script">Download XML</button>
+    <div class="extension-container">
+        <h1>Cenprot Scrapper</h1>
+        <p>Faça o download do XML de um pedido de certidão</p>
+        <button id="run-script" class="download-button">
+            <span class="material-symbols-outlined icon">cloud_download</span>
+        </button>
+        <div class="link-container">
+            <a href="https://github.com/lucasplcorrea/WebScrapperCENPROT" target="_blank" class="github-link">GitHub do Projeto</a>
+            <a href="https://github.com/lucasplcorrea/WebScrapperCENPROT#uso" target="_blank" class="usage-link">Instruções de Uso</a>
+        </div>
+    </div>
+
     <script src="popup.js"></script>
-  </body>
+</body>
 </html>
