@@ -31,7 +31,7 @@ Atualmente a extensão funciona apenas nos navegadores que usam motor Chromium (
 
 ## Uso
 
-O uso da extensão é bem simples, assim que a instalação for concluida, basta você acessar a CENPROT Nacional com o seu usuário e senha como costuma acessar, feito isso, basta acessar a tela de pedidos de certidão e abrir a certidão que deseja baixar, com a certidão aberta, clique na extensão e após clique em "Download XML".
+O uso da extensão é bem simples, assim que a instalação for concluida, basta você acessar a CENPROT Nacional com o seu usuário e senha como costuma acessar, feito isso, basta acessar a tela de pedidos de certidão e abrir a certidão que deseja baixar, com a certidão aberta, clique na extensão e após clique no ícone de Download.
 
 ## Erros Conhecidos
 
