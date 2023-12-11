@@ -1,25 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <title>Tabs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
-    <title>Cenprot Scrapper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="dist/purify.min.js"></script>
 </head>
+
 <body>
-    <div class="extension-container">
-        <h1>Cenprot Scrapper</h1>
-        <p>Faça o download do XML de um pedido de certidão</p>
-        <button id="run-script" class="download-button">
-            <span class="material-symbols-outlined icon">cloud_download</span>
-        </button>
-        <div class="link-container">
-            <a href="https://github.com/lucasplcorrea/WebScrapperCENPROT" target="_blank" class="github-link">GitHub do Projeto</a>
-            <a href="https://github.com/lucasplcorrea/WebScrapperCENPROT#uso" target="_blank" class="usage-link">Instruções de Uso</a>
+    <div class="container">
+        <div class="container-top-ten">
+            <svg height="20px" width="14px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                    stroke-width="1.024"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #BBCFD5;
+                        }
+                    </style>
+                    <g>
+                        <path class="st0"
+                            d="M469.402,35.492C334.09,110.664,197.114,324.5,197.114,324.5L73.509,184.176L0,254.336l178.732,222.172 l65.15-2.504C327.414,223.414,512,55.539,512,55.539L469.402,35.492z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+            Web Scrapper Cenprot
+        </div>
+        <header>
+            <div class="tabs">
+                <a id="tab1" name="" href="#tab1" class="active">
+                    <svg fill="none" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                        stroke-width="2" stroke="currentColor" stroke-linejoin="round">
+                        <path
+                            d="M7.8796283,13.1746043 C8.05933938,13.3842672 8.03505861,13.6999172 7.82539569,13.8796283 C7.61573277,14.0593394 7.30008277,14.0350586 7.1203717,13.8253957 L4.1203717,10.3253957 C3.9598761,10.1381508 3.9598761,9.86184918 4.1203717,9.67460431 L7.1203717,6.17460431 C7.30008277,5.96494139 7.61573277,5.94066062 7.82539569,6.1203717 C8.03505861,6.30008277 8.05933938,6.61573277 7.8796283,6.82539569 L5.15853889,10 L7.8796283,13.1746043 Z M8.95309157,19.7114427 C8.83631497,19.9616783 8.53879283,20.0698682 8.28855727,19.9530916 C8.0383217,19.836315 7.93013183,19.5387928 8.04690843,19.2885573 L15.0469084,4.28855727 C15.163685,4.0383217 15.4612072,3.93013183 15.7114427,4.04690843 C15.9616783,4.16368503 16.0698682,4.46120717 15.9530916,4.71144273 L8.95309157,19.7114427 Z M16.1203717,10.8253957 C15.9406606,10.6157328 15.9649414,10.3000828 16.1746043,10.1203717 C16.3842672,9.94066062 16.6999172,9.96494139 16.8796283,10.1746043 L19.8796283,13.6746043 C20.0401239,13.8618492 20.0401239,14.1381508 19.8796283,14.3253957 L16.8796283,17.8253957 C16.6999172,18.0350586 16.3842672,18.0593394 16.1746043,17.8796283 C15.9649414,17.6999172 15.9406606,17.3842672 16.1203717,17.1746043 L18.8414611,14 L16.1203717,10.8253957 Z" />
+                    </svg>
+                    Script
+                </a>
+                <a id="tab2" name="" href="#tab2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                    </svg>
+                    Sobre
+                </a>
+            </div>
+        </header>
+        <div class="tab-content-wrapper">
+            <div id="tab1-content" class="tab-content tab-content--active">
+            </div>
+            <div id="tab2-content" class="tab-content">
+            </div>
         </div>
     </div>
-
     <script src="popup.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
