@@ -40,6 +40,7 @@ O uso da extensão é bem simples, assim que a instalação for concluida, basta
 
 - Nos campos de endereço do solicitante da CENPROT, as tags de número e complemento estão invertidos, então nos pedidos que o solicitante preencher o campo complemento, o complemento virá antes do número, infelizmente não consegui treinar o scrapper para identificar e separar essas informações, mas caso os desenvolvedores da CENPROT corrijam isso posteriormente, eu consigo ajustar o código para também realziar essa correção.
 - O site da cenprot não separa os campos do pedido com IDs únicas, então a extração dos dados se dá através de comparações com expressões comuns de cada campo. Caso haja alteração de descrições o script pode não funcionar corretamente, se isso ocorrer basta abrir uma "issue"aqui no github para que eu verifique e corrija.
+- Erro de elemento ao utilizar a extensão pela primeira vez (o erro pode ser ignorado e não atrapalha o uso da extensão)
 
 ## Estrutura Padrão
 A estrutura padrão do XML tem o seguinte formato:
