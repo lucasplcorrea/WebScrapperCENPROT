@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           Conheça a página do projeto e outras versões
                       </div>
                   </div>
-                  <a href="#https://github.com/lucasplcorrea/WebScrapperCENPROT" class="explore-button" title="GitHub do Projeto">
+                  <a href="https://github.com/lucasplcorrea/WebScrapperCENPROT" target="_blank" class="explore-button" title="GitHub do Projeto">
                       Explorar
                   </a>
               </div>
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           Visite a página de ajuda para aprender a utilizar a extensão
                       </div>
                   </div>
-                  <a href="#https://github.com/lucasplcorrea/WebScrapperCENPROT?tab=readme-ov-file#uso" class="explore-button" title="Como usar">
+                  <a href="https://github.com/lucasplcorrea/WebScrapperCENPROT?tab=readme-ov-file#uso" target="_blank" class="explore-button" title="Como usar">
                       Explorar
                   </a>
               </div>
