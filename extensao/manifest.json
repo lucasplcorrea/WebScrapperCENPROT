@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Injetor de Script",
+    "name": "WebScrapper CENPROT",
     "version": "2.0",
     "description": "Faça download de XML pedidos de certidão da CENPROT",
     "permissions": [
