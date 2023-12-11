@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Injetor de Script",
-    "version": "1.0",
+    "version": "2.0",
     "description": "Injeta script na página",
     "permissions": [
         "activeTab",
